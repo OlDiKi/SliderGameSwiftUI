@@ -11,6 +11,8 @@
 		53D9C93627CA4F84008F2364 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9C93527CA4F84008F2364 /* ContentView.swift */; };
 		53D9C93827CA4F85008F2364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D9C93727CA4F85008F2364 /* Assets.xcassets */; };
 		53D9C93B27CA4F85008F2364 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D9C93A27CA4F85008F2364 /* Preview Assets.xcassets */; };
+		53D9C94227CA4F9D008F2364 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9C94127CA4F9D008F2364 /* SliderView.swift */; };
+		53D9C94427CA4FAD008F2364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D9C94327CA4FAD008F2364 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		53D9C93527CA4F84008F2364 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53D9C93727CA4F85008F2364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53D9C93A27CA4F85008F2364 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53D9C94127CA4F9D008F2364 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		53D9C94327CA4FAD008F2364 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				53D9C93527CA4F84008F2364 /* ContentView.swift */,
 				53D9C93727CA4F85008F2364 /* Assets.xcassets */,
 				53D9C93927CA4F85008F2364 /* Preview Content */,
+				53D9C94327CA4FAD008F2364 /* Main.storyboard */,
+				53D9C94127CA4F9D008F2364 /* SliderView.swift */,
 			);
 			path = SliderGameSwiftUI;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D9C94427CA4FAD008F2364 /* Main.storyboard in Resources */,
 				53D9C93B27CA4F85008F2364 /* Preview Assets.xcassets in Resources */,
 				53D9C93827CA4F85008F2364 /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D9C94227CA4F9D008F2364 /* SliderView.swift in Sources */,
 				53D9C93627CA4F84008F2364 /* ContentView.swift in Sources */,
 				53D9C93427CA4F84008F2364 /* SliderGameSwiftUIApp.swift in Sources */,
 			);
