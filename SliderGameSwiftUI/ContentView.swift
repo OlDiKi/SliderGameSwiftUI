@@ -8,9 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var targetValue = Int.random(in: 1...100)
+    @State private var currentValue: Double = 50
+    @State private var showAlert: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
+            
+            HStack {
+                Text("0")
+                    .padding()
+                SliderValue(currentValue: $currentValue)
+                    .frame(
+                        height: 100)
+                Text("100")
+                    .padding()
+            }
+            
+            VStack {
+                
+                Buttons(title: "Проверь меня!") {
+                    showAlert.toggle()
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Your Score"),
+                          message: Text("\(computeScore())"))
+                }
+                .padding()
+            }
+            
+            Buttons(title: "Начать заново") {
+                getNewGame()
+            }
+        }
+    }
+    
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(currentValue))
+        return 100 - difference
+    }
+    
+    private func getNewGame() {
+        targetValue = Int.random(in: 1...100)
     }
 }
 
