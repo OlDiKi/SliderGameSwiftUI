@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var targetValue = Int.random(in: 1...100)
-    @State private var currentValue: Double = 50
-    @State private var showAlert: Bool = false
+    @State private var currentValue = Double.random(in: 0...100)
+    @State private var showAlert = false
     
     var body: some View {
         
@@ -20,7 +20,8 @@ struct ContentView: View {
             HStack {
                 Text("0")
                     .padding()
-                SliderValue(currentValue: $currentValue)
+                SliderValue(currentValue: $currentValue, opacity:
+                computeScore())
                     .frame(
                         height: 100)
                 Text("100")

@@ -21,7 +21,6 @@ struct Buttons: View {
 
 struct Buttons_Previews: PreviewProvider {
     static var previews: some View {
-        Buttons(title: "Check") {
-        }
+        Buttons(title: "Check", action: {}) 
     }
 }
